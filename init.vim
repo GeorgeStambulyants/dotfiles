@@ -30,6 +30,10 @@ nnoremap ,<space> :nohlsearch<CR>
 
 set colorcolumn=79
 
+" Change directory to the current buffer when opening files.
+set autochdir
+map <C-E> :Ex<CR>
+
 " c++ syntax highlighting
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1

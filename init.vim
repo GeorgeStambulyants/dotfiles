@@ -17,7 +17,7 @@ set showcmd
 set showmode
 
 " always display the status bar
-set laststatus=2
+set laststatus=1
 " always show cursor position
 set ruler
 " set window's title, reflecting the file currently being edited 
@@ -28,6 +28,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'vim-syntastic/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " color schemas
 Plug 'morhetz/gruvbox'  " colorscheme gruvbox

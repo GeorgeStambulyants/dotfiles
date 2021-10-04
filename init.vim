@@ -11,6 +11,18 @@ set expandtab
 set autoindent
 set fileformat=unix
 
+" show incomplete commands at the bottom
+set showcmd
+" show current mode
+set showmode
+
+" always display the status bar
+set laststatus=2
+" always show cursor position
+set ruler
+" set window's title, reflecting the file currently being edited 
+set title
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -23,6 +35,9 @@ Plug 'morhetz/gruvbox'  " colorscheme gruvbox
 call plug#end()
 
 colorscheme gruvbox
+
+" for transparent background
+hi Normal guibg=NONE ctermbg=NONE
 
 " turn off search highlight
 nnoremap ,<space> :nohlsearch<CR>
